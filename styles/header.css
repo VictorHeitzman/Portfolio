@@ -1,0 +1,10 @@
+.cabecalho{
+	margin: 10px solid red;
+	display: flex;
+	align-items: center;
+}
+
+.img-email{
+	width: 15px;
+	right: 10px;
+}
