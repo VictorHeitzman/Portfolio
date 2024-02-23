@@ -12,14 +12,38 @@
 	--cor-texto: #FFFF;
 	--cor-texto-destaque: #ECB159;
 	--font-titulo: "Krona One", sans-serif;
-	--font-texto: "Montserrat", sans-serif;;
+	--font-texto: "Montserrat", sans-serif;
+	--tamanho-icone: 30px;
 }
 
 body{
 	background-color: var(--cor-fundo);
 	color: var(--cor-texto);
-	width: 100%;
+	/* width: 100%;
+	height: 100%; */
 }
+
+.cabecalho__menu{
+	display: flex;
+	justify-content: end;
+	margin-right: 25%;
+}
+
+.cabecalho__menu__link{
+	color: var(--cor-texto-destaque);
+	text-decoration: none;
+	font-family: var(--font-texto);
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.cabecalho__menu__link__icone{
+	width: var(--tamanho-icone);
+	padding: 5px;
+}
+
+
 
 .titulo-destaque{
 	color: var(--cor-texto-destaque)
@@ -33,7 +57,7 @@ body{
 	border-right-width: 10px
 }
 .apresentacao{
-	margin: 10% 15%;
+	padding: 5% 16%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -58,27 +82,56 @@ body{
 
 .apresentacao__link{
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.apresentacao__link__subtitulo{
+	font-family: var(--font-titulo);	
+	font-weight: 400;
+	font-size: 1.2rem;
 }
 
 .apresentacao__link__botao{
-	background-color: var(--cor-texto-destaque);
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	border: solid 1px var(--cor-texto-destaque);
 	width: 40%;
 	padding: 15px 0;
 	text-align: center;
 	border-radius: 10px;
 	margin-top: 15px;
 	text-decoration: none;
-	color: var(--cor-fundo);
+	color: var(--cor-texto);
 	font-family: var(--font-texto);
 	font-size: 1rem;
 	font-weight: 600;
+	align-items: center;
+	transition: 0.3s;
 }
 
-@media (max-width: 720px) {
+.apresentacao__link__botao__icone{
+	align-items: center;
+	width: var(--tamanho-icone);
+}
+
+.apresentacao__link__botao:hover{
+	background-color: var(--cor-texto-destaque);
+	color: var(--cor-fundo);
+	height: 43%;
+	width: 43%;
+}
+
+@media (max-width: 730px) {
 	
 	.apresentacao{
 		flex-direction: column;
+	}
+
+	.apresentacao__conteudo__texto{
+		padding: 20px 0;
 	}
 
 	.img-perfil{
@@ -87,8 +140,9 @@ body{
 		width: 90%;
 	}
 
-
+	.cabecalho__menu{
+		margin-right: 10px;
+		justify-content: center;
+	}
 	
-
-
 }
