@@ -101,13 +101,38 @@ body{
 }
 
 .apresentacao__conteudo__texto{
+	border-right: 2px solid var(--cor-texto-destaque);
 	font-family: var(--font-texto);
 	font-size: 2rem;
 	color: var(--cor-texto-destaque);
+	white-space: nowrap;
+	overflow: hidden;
+	animation: blinkCursor 900ms steps(30) infinite normal, typing 4s steps(35) 1s normal both;
 }
 
 .cabecalho__lista{
 	display: none;
+}
+
+
+@keyframes blinkCursor{
+	from{
+		border-right-color: var(--cor-texto-destaque);
+	}
+
+	to{
+		border-right-color: transparent;
+	}
+}
+
+@keyframes typing{
+	from{
+		width: 0;
+	}
+
+	to{
+		width: 15rem;
+	}
 }
 
 @media (max-width: 730px) {
@@ -123,7 +148,8 @@ body{
 	.img-perfil{
 		order: -1;
 		margin-bottom: 25px;
-		width: 90%;
+		width: 300px;
+		height: 300px;
 	}
 
 	.cabecalho__menu{
@@ -152,5 +178,10 @@ body{
 	.cabecalho__menu__link__icone:hover{
 		transform: rotate(90deg) ;
 		transition: transform 1s;  
+	}
+
+	.cabecalho__menu__link__icone{
+		transform: rotate(0deg) ;
+		transition: transform 1s;
 	}
 }
