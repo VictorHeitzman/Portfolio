@@ -10,43 +10,85 @@
 <body>
 	
 		<header class="cabecalho">
-				<nav class="cabecalho__menu">
-					<a class="cabecalho__menu__link" href="perfil.html">
-						<img class="cabecalho__menu__link__icone" src="icons/email.png" alt="">	
-						Heitzmam@gmail.com
-					</a>
+			
+			<nav class="cabecalho__lista">
+				<div class="cabecalho__lista__lista" >
+					<input type="checkbox" id="menu" hidden class="cabecalho-check">
 
-					<div class="cabecalho__menu">
-						<a class="cabecalho__menu__link" href="perfil.html">
-							<img class="cabecalho__menu__link__icone" src="icons/perfil.png" alt="">	
-							Resume
-						</a>
+					<label for="menu">
+						<img class="cabecalho__menu__link__icone" src="icons/menu.png" alt="">
+					</label>
+					
+					
+					<ol class="cabecalho__lista__items">
+						<li class="cabecalho__lista__link">
+							<a class="cabecalho__menu__link" href="perfil.html">
+								<img class="cabecalho__menu__link__icone" src="icons/email.png" alt="">	
+								Heitzmam@gmail.com
+							</a>
+						</li>
 						
-						<a class="cabecalho__menu__link" href="works.html">
-							<img class="cabecalho__menu__link__icone" src="icons/works.png" alt="">
-							Works</a>
-					</div>
-				</nav>		
+						<li class="cabecalho__lista__link">
+							<a class="cabecalho__menu__link" href="perfil.html">
+								<img class="cabecalho__menu__link__icone" src="icons/perfil.png" alt="">	
+								Resume
+							</a>
+						</li>
+						
+						<li class="cabecalho__lista__link">
+							<a class="cabecalho__menu__link" href="works.html">
+								<img class="cabecalho__menu__link__icone" src="icons/works.png" alt="">
+								Works
+							</a>
+						</li>
+					</ol>
+				
+				</div>
+			</nav>
+
+			<nav class="cabecalho__menu">
+
+				<a class="cabecalho__menu__link" href="perfil.html">
+					<img class="cabecalho__menu__link__icone" src="icons/email.png" alt="">	
+					Heitzmam@gmail.com
+				</a>
+
+				<div class="cabecalho__menu">
+					<a class="cabecalho__menu__link" href="perfil.html">
+						<img class="cabecalho__menu__link__icone" src="icons/perfil.png" alt="">	
+						Resume
+					</a>
+					
+					<a class="cabecalho__menu__link" href="works.html">
+						<img class="cabecalho__menu__link__icone" src="icons/works.png" alt="">
+						Works
+					</a>
+				</div>
+			</nav>		
 		</header>
 
 		
+		<aside class="menu__lateral">
+				<a class="menu__lateral__link__botao" href="https://github.com/VictorHeitzman?tab=repositories">
+					<img class="menu__lateral__link__botao__icone" src="icons/github.png" alt="">
+				</a>
+				<a class="menu__lateral__link__botao" href="https://www.linkedin.com/in/victor-heitzman-951011193/">
+					<img class="menu__lateral__link__botao__icone" src="icons/linkedin.png" alt="">
+				</a>
+		</aside>
+
 		<main class="apresentacao">
-			<aside class="menu__lateral">
-					<a class="menu__lateral__link__botao" href="https://github.com/VictorHeitzman?tab=repositories">
-						<img class="menu__lateral__link__botao__icone" src="icons/github.png" alt="">
-					</a>
-					<a class="menu__lateral__link__botao" href="https://www.linkedin.com/in/victor-heitzman-951011193/">
-						<img class="menu__lateral__link__botao__icone" src="icons/linkedin.png" alt="">
-					</a>
-			</aside>
+			
 			
 			<section class="apresentacao__conteudo">
-				<h1 class="nome apresentacao__conteudo__nome">Victor <br>
+				<img class="img-thank-you" src="icons/obrigado.png" alt="">
+				
+				<h2 class="nome apresentacao__conteudo__nome">Victor <br>
 					<strong class="nome apresentacao__conteudo__sobrenome">Heitzman</strong>
-				</h1>
-				<p class="apresentacao__conteudo__texto">Desenvolvedor</p>
+					<p class="apresentacao__conteudo__texto">Desenvolvedor</p>
+				</h2>
 			</section>
-				<img class="img-perfil" src="icons/profile.jpg" alt="Imagem minha cartoon">
+				<img class="img-perfil" src="icons/dev.png" alt="Imagem minha cartoon">
 		</main>
 
 	<footer></footer>
